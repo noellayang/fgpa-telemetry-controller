@@ -1,5 +1,5 @@
 # fgpa-telemetry-controller
-Small Verilog project, built to learn and demo RTL design, sim, and verification fundamentals.
+Small Verilog project to learn and demo RTL design, sim, and verification fundamentals.
 The first stage currently implements a synchronous sample timer that generates a one-clock-cycle pulse after a configurable number of clock cycles.
 
 
