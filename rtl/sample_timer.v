@@ -1,4 +1,6 @@
-module timer(
+module timer #(
+    parameter clocks_per_sample = 5
+)(
     input clk,
     input reset,
     output reg sample_tick
@@ -13,7 +15,7 @@ always@(posedge clk) begin
         counter <= 0;
     end
 
-    else if (counter == 4) begin
+    else if (counter == clocks_per_sample - 1) begin
         sample_tick <= 1;
         counter <= 0;
     end

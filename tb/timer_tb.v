@@ -1,15 +1,16 @@
+`timescale 1ns/1ps
 
-module timer_tb(
-    reg clk,
-    reg reset,
-    wire sample_tick;
-);
+module timer_tb;
 
+reg clk;
+reg reset;
+wire sample_tick;
+    
 timer uut(
     .clk(clk),
     .reset(reset),
-    .sample_tick(sample_tick);
-)
+    .sample_tick(sample_tick)
+);
 
 initial begin
     clk = 0;
@@ -24,6 +25,9 @@ initial begin
 
     #12;
     reset = 0;
+
+    #100;
+    $finish;
 end
 
 initial begin
