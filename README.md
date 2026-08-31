@@ -4,6 +4,7 @@ The first stage currently implements a synchronous sample timer that generates a
 
 
 ## Current functionality
+![One clock cycle in GTKWave](images/clock_cycle.png "One clock cycle").
 
 - Synchronous counter-based timer
 - Configurable sampling interval using a Verilog parameter
