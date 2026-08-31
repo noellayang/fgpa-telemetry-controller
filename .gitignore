@@ -1,0 +1,10 @@
+# Icarus Verilog compiled sim binary
+sim
+*.out
+*.vvp
+
+# Waveform dumps (regenerate with the sim, don't commit)
+*.vcd
+
+# OS junk
+.DS_Store
